@@ -4,7 +4,7 @@ import Common
 import System.Random
 import System.Random.Shuffle
 
--- TODO: Implement a random shuffling algorithm
+--  TODO: Implement a random shuffling algorithm
 shuffleDeck :: State -> IO State
 shuffleDeck state@State{players = _players, 
                         deck = _deck} = return state { players = setHnds shufdeck 0 4 _players,
